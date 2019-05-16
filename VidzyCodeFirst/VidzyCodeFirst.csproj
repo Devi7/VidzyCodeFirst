@@ -55,6 +55,14 @@
     <Compile Include="Migrations\201905161824100_InitModels.Designer.cs">
       <DependentUpon>201905161824100_InitModels.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905161844318_ChangeVideoToOneGenreOnly.cs" />
+    <Compile Include="Migrations\201905161844318_ChangeVideoToOneGenreOnly.Designer.cs">
+      <DependentUpon>201905161844318_ChangeVideoToOneGenreOnly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905161855323_AddClassificationToVideosTable.cs" />
+    <Compile Include="Migrations\201905161855323_AddClassificationToVideosTable.Designer.cs">
+      <DependentUpon>201905161855323_AddClassificationToVideosTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -67,6 +75,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201905161824100_InitModels.resx">
       <DependentUpon>201905161824100_InitModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905161844318_ChangeVideoToOneGenreOnly.resx">
+      <DependentUpon>201905161844318_ChangeVideoToOneGenreOnly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905161855323_AddClassificationToVideosTable.resx">
+      <DependentUpon>201905161855323_AddClassificationToVideosTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
