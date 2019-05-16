@@ -3,7 +3,7 @@ namespace VidzyCodeFirst.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitialModel : DbMigration
+    public partial class InitModels : DbMigration
     {
         public override void Up()
         {
@@ -11,7 +11,7 @@ namespace VidzyCodeFirst.Migrations
                 "dbo.Genres",
                 c => new
                     {
-                        Id = c.Int(nullable: false, identity: true),
+                        Id = c.Byte(nullable: false),
                         Name = c.String(),
                     })
                 .PrimaryKey(t => t.Id);

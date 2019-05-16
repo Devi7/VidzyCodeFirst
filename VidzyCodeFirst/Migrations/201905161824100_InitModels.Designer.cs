@@ -7,13 +7,13 @@ namespace VidzyCodeFirst.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class InitialModel : IMigrationMetadata
+    public sealed partial class InitModels : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialModel));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(InitModels));
         
         string IMigrationMetadata.Id
         {
-            get { return "201905142035180_InitialModel"; }
+            get { return "201905161824100_InitModels"; }
         }
         
         string IMigrationMetadata.Source

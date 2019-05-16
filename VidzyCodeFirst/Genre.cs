@@ -10,7 +10,7 @@ namespace VidzyCodeFirst
     public class Genre
     {
         [Key]
-        public int Id { get; set; }
+        public byte Id { get; set; }
         public string Name { get; set; }
         public IList<Video> Videos { get; set; }
     }

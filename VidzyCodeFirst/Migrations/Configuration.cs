@@ -20,8 +20,8 @@ namespace VidzyCodeFirst.Migrations
             //  to avoid creating duplicate seed data.
 
             context.Genres.AddOrUpdate(a => a.Name, 
-                    new Genre { Name = "Action"},
-                    new Genre { Name = "Comedy"}
+                    new Genre { Id = 1, Name = "Action"},
+                    new Genre { Id = 2, Name = "Comedy"}
                 );
 
         }
