@@ -4,6 +4,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VidzyCodeFirst.EntityConfiguration;
 
 namespace VidzyCodeFirst
 {
@@ -16,6 +17,12 @@ namespace VidzyCodeFirst
         public VidzyContext() : base("name=VidzyConnection")
         {
 
+        }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+
+            modelBuilder.Configurations.Add(new VideoConfiguration());
         }
     }
 

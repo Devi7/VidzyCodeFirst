@@ -19,7 +19,12 @@ namespace VidzyCodeFirst.EntityConfiguration
                 .IsRequired()
                 .HasMaxLength(255);
 
-            Property(v => v.Genre)
+            HasRequired(v => v.Genre)
+                .WithMany(g => g.Videos)
+                .HasForeignKey(v => v.GenreId);
+
+            Property(v => v.Classification)
+                .HasColumnType("tinyint");
         }
 
 
