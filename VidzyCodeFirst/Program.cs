@@ -23,6 +23,7 @@ namespace VidzyCodeFirst
         {
 
             modelBuilder.Configurations.Add(new VideoConfiguration());
+            modelBuilder.Configurations.Add(new GenreConfiguration());
         }
     }
 
