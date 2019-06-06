@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace VidzyCodeFirst
 {
-
+    
     public enum Classification : byte
     {
         Silver = 1,
@@ -17,12 +17,18 @@ namespace VidzyCodeFirst
 
     public class Video
     {
+        public Video()
+        {
+            Tags = new HashSet<Tag>();
+        }
+
         [Key]
         public int Id { get; set; }
         public string Name { get; set; }
         public DateTime ReleaseDate { get; set; }
         public Genre Genre { get; set; }
         public int GenreId { get; set; }
+        public virtual ICollection<Tag> Tags { get; set; }
         public Classification Classification { get; set; }
 
     }

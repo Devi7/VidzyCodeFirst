@@ -65,9 +65,14 @@
     <Compile Include="Migrations\201905161855323_AddClassificationToVideosTable.Designer.cs">
       <DependentUpon>201905161855323_AddClassificationToVideosTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906061922355_initModel.cs" />
+    <Compile Include="Migrations\201906061922355_initModel.Designer.cs">
+      <DependentUpon>201906061922355_initModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tag.cs" />
     <Compile Include="Video.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -83,6 +88,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905161855323_AddClassificationToVideosTable.resx">
       <DependentUpon>201905161855323_AddClassificationToVideosTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906061922355_initModel.resx">
+      <DependentUpon>201906061922355_initModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

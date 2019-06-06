@@ -25,6 +25,15 @@ namespace VidzyCodeFirst.EntityConfiguration
 
             Property(v => v.Classification)
                 .HasColumnType("tinyint");
+
+            HasMany(c => c.Tags)
+            .WithMany(t => t.Videos)
+            .Map(m =>
+            {
+                m.ToTable("VideoTags");
+                m.MapLeftKey("VideoId");
+                m.MapRightKey("TagId");
+            });
         }
 
 
